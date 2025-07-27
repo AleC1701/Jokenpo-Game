@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pedra Papel Tesoura</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+  <header>
+    <h1>Pedra Papel Tesoura</h1>
+  </header>
+
+  <div class="score-board">
+    <div id="user-label" class="badge">Você</div>
+    <div id="computer-label" class="badge">CPU</div>
+    <span id="user-score">0</span>:<span id="comp-score">0</span>
+  </div>
+
+  <div class="result">
+    <p id="result-text">Escolha sua jogada!</p>
+  </div>
+
+  <div class="choices">
+    <div class="choice" id="pedra">
+      <img src="imagens/pedra.png" alt="Pedra">
+    </div>
+    <div class="choice" id="papel">
+      <img src="imagens/papel.png" alt="Papel">
+    </div>
+    <div class="choice" id="tesoura">
+      <img src="imagens/tesoura.png" alt="Tesoura">
+    </div>
+  </div>
+
+  <p id="action-message">Faça o seu movimento</p>
+
+
+  <div class="match-area">
+  <div class="player">
+    <h3>Você</h3>
+    <img id="user-choice-img" src="" alt="Sua escolha" class="match-icon">
+  </div>
+  <div class="cpu">
+    <h3>CPU</h3>
+    <img id="cpu-choice-img" src="" alt="Escolha da CPU" class="match-icon">
+  </div>
+</div>
+
+    <script src="script.js"></script>

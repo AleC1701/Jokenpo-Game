@@ -1,0 +1,135 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+    background-color: rgb(31, 28, 28);
+}
+header {
+    background: white;
+    padding: 20px;
+}
+header > h1 { 
+    color: #252772E;
+    text-align: center;
+    font-family: rockwell, sans-serif;
+}
+
+.score-board {
+    margin: 20px auto;
+    border: 3px solid white;
+    border-radius: 4px;
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-size: 35px;
+    padding: 15px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+}
+
+
+.badge {
+    background: darkred;
+    font-size: 14px;
+    padding: 2px 10px;
+}
+
+#user-label {
+    position: absolute;
+    top: 30px;
+    left: -25px;
+
+}
+
+#computer-label {
+    position: absolute;
+    top: 30px;
+    right: -25px;
+
+}
+
+.result {
+    font-size: 30px;
+    color: white;
+}
+
+.result > p {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px ;
+}
+
+.choice {
+  width: 120px;
+  height: 120px;
+  border: 4px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+}
+
+.choice img {
+  width: 70px;
+  height: 70px;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: rgb(110, 110, 110);
+}
+
+#action-message {
+
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinning {
+  animation: spin 0.5s linear infinite;
+}
+
+.match-area {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.match-area .player,
+.match-area .cpu {
+  text-align: center;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.match-icon {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+}
